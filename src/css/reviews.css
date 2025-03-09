@@ -1,0 +1,131 @@
+.reviews-block {
+ max-width: 343px;
+ min-width: 343px;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, 343px);
+ margin: 0;
+ padding: 32px 0 84px 0;
+}
+
+.reviews-img {
+ max-width: 48px;
+ border-radius: 10px;
+ margin: 0;
+ padding: 0;
+}
+
+.reviews-elem {
+ border: 1px solid rgba(250, 250, 250, 0.2);
+ border-radius: 20px;
+ padding: 32px 24px;
+ min-height: 352px;
+}
+
+.not-found {
+ padding: 32px 24px;
+ min-height: 352px;
+ display: flex;
+ align-items: center;
+ margin: 0 auto;
+}
+
+.reviews-info {
+ margin-top: 32px;
+}
+
+.reviews-autor {
+ margin-bottom: 8px;
+ font-weight: 600;
+ font-size: 20px;
+ line-height: 150%;
+ letter-spacing: -0.02em;
+ color: #fafafa;
+}
+
+.reviews-text {
+ margin: 0;
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 150%;
+ letter-spacing: -0.02em;
+ color: rgba(250, 250, 250, 0.6);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+ width: 68px !important;
+ height: 68px !important;
+ border: 1px solid #fafafa;
+ border-radius: 50%;
+ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ background-color: transparent;
+ top: calc(100% - 50px) !important;
+ left: 50% !important;
+ transform: translateX(-50%);
+}
+
+.swiper-button-prev {
+ margin-left: -45px;
+}
+
+.swiper-button-next {
+ margin-left: 45px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+ background-color: rgba(255, 255, 255, 0.1) !important;
+ border-color: rgba(250, 250, 250, 0.6) !important;
+ color: rgba(250, 250, 250, 0.6) !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+ display: none !important;
+}
+
+.left-svg,
+.right-svg {
+ fill: none;
+ stroke: #ffffff;
+ width: 50% !important;
+ height: 50% !important;
+}
+
+.swiper-button-next .right-svg {
+ transform: scaleX(-1);
+}
+
+@media (min-width: 768px) {
+ .reviews-block {
+     max-width: 704px;
+     min-width: 343px;
+     grid-template-columns: repeat(auto-fit, 344px);
+     padding: 32px 0 100px 0;
+ }
+
+ .reviews-elem {
+     min-height: 356px;
+ }
+
+ .swiper-button-prev,
+ .swiper-button-next {
+     top: calc(100% - 50px) !important;
+ }
+}
+
+@media (min-width: 1280px) {
+ .reviews-block {
+     max-width: 1376px;
+     grid-template-columns: repeat(auto-fit, 332px);
+ }
+
+ .reviews-elem {
+     min-height: 356px;
+ }
+
+ .swiper-button-prev,
+ .swiper-button-next {
+     top: calc(100% - 50px) !important;
+ }
+}
