@@ -1,28 +1,28 @@
 .hero-cntr {
-  background-color: #1c1d20;
-  background-image: url(../images/Hero-bgnd.png);
-  background-repeat: no-repeat;
+  background-image: url(../images/Hero-bgnd-mobile.png);
   width: 100%;
-  height: 900px;
+  max-width: 375px;
+  height: 812px;
   display: flex;
-  justify-content: center; /* Центрує контейнер з текстом */
-  align-items: center; /* Центрує контейнер по вертикалі */
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  position: relative
+  position: relative;
+  min-height: 100vh;
 }
 
 .hero-title-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%; /* Тепер він буде займати 80% ширини контейнера */
-    max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 343px;
 }
 
 .hero-title {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
-  font-size: 90px;
+  font-size: 50px;
   line-height: 1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -32,17 +32,15 @@
 
 .hero-soc-networks {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
-  gap: 8px;
-  width: 473px;
-  height: 55px;
-  padding-right: 32px;
+  gap: 4px;
+  max-width: 375px;
+  height: 37px;
   list-style: none;
-  position: absolute; 
-  bottom: 32px; 
-  right: 0;
+  position: absolute;
+  bottom: 32px;
 }
 
 .hero-soc-network {
@@ -53,14 +51,16 @@
   gap: 10px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  width: 55px;
-  height: 55px;
+  width: 37px;
+  height: 37px;
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: -0.02em;
   color: #fafafa;
   text-decoration: none;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hero-soc-email {
@@ -71,13 +71,72 @@
   gap: 10px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  width: 223px;
-  height: 55px;
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: -0.02em;
   color: #fafafa;
   text-decoration: none;
+  padding: 4px 12px;
 }
 
+/* ---------Adaptation--------- */
+/* --------Laptop-------- */
+@media (min-width: 768px) {
+  .hero-cntr {
+    background-image: url(../images/Hero-bgnd-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 768px;
+    height: 1024px;
+    min-height: fit-content;
+  }
+
+  .hero-title-wrapper {
+    max-width: 632px;
+  }
+
+  .hero-title {
+    font-size: 90px;
+  }
+
+  .hero-soc-networks {
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 8px;
+    max-width: 473px;
+    height: 55px;
+    right: 32px;
+  }
+
+  .hero-soc-network {
+    font-size: 16px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .hero-soc-email {
+    font-size: 16px;
+    width: 223px;
+    height: 55px;
+  }
+}
+/* --------Desktop------- */
+@media (min-width: 1440px) {
+  .hero-cntr {
+    background-color: #1c1d20;
+  background-image: url(../images/Hero-bgnd.png);
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  height: 900px;
+  }
+
+  .hero-title-wrapper {
+    width: 80%; 
+    max-width: 1200px;
+  }
+
+ .hero-soc-networks {
+  right: 0;
+  }
+}
