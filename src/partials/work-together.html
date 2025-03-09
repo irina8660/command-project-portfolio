@@ -1,7 +1,38 @@
 <footer class="footer work-together section" id="work-together">
   <div class="container form-section-container">
     <div class="portrait-title-together-container">
-      <div class="portrait-title-container"></div>
+      <div class="portrait-title-container">
+        <picture>
+          <source
+            srcset="
+              ../images/img/footer-desk1.jpeg-min.jpg 1x,
+              ../images/img/footer-desk2.jpeg-min.jpg 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ../images/img/footer-tab1.jpeg-min.jpg 1x,
+              ../images/img/footer-tab2.jpeg-min.jpg 1x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ../images/img/footer-mob1.jpeg-min.jpg 1x,
+              ../images/img/footer-mob2.jpeg-min.jpg 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+            src="../images/img/"
+            alt="Let’s work together"
+            class="section-portrait"
+          />
+        </picture>
+        <h2 class="form-title">Let's <span class="red">work</span></h2>
+      </div>
+
       <span class="form-title">together</span>
     </div>
 
