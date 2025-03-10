@@ -1,3 +1,28 @@
-<header class="header" id="header">
-  <div class="container header-container"></div>
+<header class="header">
+  <div class="container">
+    <a class="header__logo" href="#">
+      <img
+        class="header__logo-img"
+        srcset="/src/images/img/logo1x.png 1x, /src/images/img/logo2x.png 2x"
+        alt="Logo"
+        width="80"
+        height="80"
+      />
+      <span class="header__logo-text">jefferson*</span>
+    </a>
+
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a class="header__menu-link" href="#about">About me</a></li>
+        <li><a class="header__menu-link" href="#benefits">Benefits</a></li>
+        <li><a class="header__menu-link" href="#projects">Projects</a></li>
+        <li><a class="header__menu-link" href="#faq">FAQ</a></li>
+      </ul>
+      <a class="header__order" href="#work">Order the project</a>
+    </nav>
+
+    <button class="header__burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
