@@ -49,8 +49,6 @@
   justify-content: center;
   flex-direction: row;
   gap: 10px;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 60px;
   width: 37px;
   height: 37px;
   font-family: 'Inter Tight', sans-serif;
@@ -63,14 +61,20 @@
   justify-content: center;
 }
 
+.hero-soc-network:hover,
+.hero-soc-network:focus,
+.hero-soc-email:hover,
+.hero-soc-email:focus {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+}
+
 .hero-soc-email {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 10px;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 60px;
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 14px;
