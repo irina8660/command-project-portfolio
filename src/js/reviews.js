@@ -1,6 +1,5 @@
 import Swiper from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
+import "swiper/css/bundle";
 import { Navigation, Keyboard } from "swiper/modules";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
@@ -8,7 +7,7 @@ import "izitoast/dist/css/iziToast.min.css";
 document.addEventListener("DOMContentLoaded", async function () {
     const reviewsSection = document.querySelector(".reviews");
     const reviewsBlock = document.querySelector(".reviews-block");
-    try {
+п    try {
         const response = await fetch("https://portfolio-js.b.goit.study/api/reviews");
         const reviewsData = await response.json();
         let reviewsHTML = reviewsData
@@ -25,6 +24,27 @@ document.addEventListener("DOMContentLoaded", async function () {
             )
             .join("");
         reviewsBlock.innerHTML = reviewsHTML;
+        const swiper = new Swiper(".swiper", {
+            modules: [Navigation, Keyboard],
+            simulateTouch: true,
+            touchRatio: 1,
+            touchEventsTarget: "container",
+            grabCursor: true,
+            slidesPerView: 1,
+            spaceBetween: 16,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: true,
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1280: { slidesPerView: 4 },
+            },
+        });
     } catch (error) {
         console.error(error);
         reviewsBlock.innerHTML = `<p class="not-found">Not found</p>`;
@@ -44,26 +64,4 @@ document.addEventListener("DOMContentLoaded", async function () {
         );
         observer.observe(reviewsSection);
     }
-    const swiper = new Swiper(".swiper", {
-        modules: [Navigation, Keyboard],
-        simulateTouch: true,
-        touchRatio: 1,
-        touchEventsTarget: "container",
-        grabCursor: true,
-        slidesPerView: 1,
-        spaceBetween: 16,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        keyboard: {
-            enabled: true,
-            onlyInViewport: true,
-        },
-        breakpoints: {
-            768: { slidesPerView: 2 },
-            1280: { slidesPerView: 4 },
-        },
-    });
 });
-
