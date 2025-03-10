@@ -51,45 +51,45 @@
  color: rgba(250, 250, 250, 0.6);
 }
 
-.swiper-button-prev,
-.swiper-button-next {
- width: 68px !important;
- height: 68px !important;
- border: 1px solid #fafafa;
- border-radius: 50%;
- transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
- background-color: transparent;
- top: calc(100% - 50px) !important;
- left: 50% !important;
- transform: translateX(-50%);
+.reviews .swiper .swiper-button-prev,
+.reviews .swiper .swiper-button-next {
+    width: 68px;
+    height: 68px;
+    border: 1px solid #fafafa;
+    border-radius: 50%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    top: calc(100% - 50px);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.swiper-button-prev {
- margin-left: -45px;
+.reviews .swiper .swiper-button-prev {
+    margin-left: -45px;
 }
 
-.swiper-button-next {
- margin-left: 45px;
+.reviews .swiper .swiper-button-next {
+    margin-left: 45px;
 }
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
- background-color: rgba(255, 255, 255, 0.1) !important;
- border-color: rgba(250, 250, 250, 0.6) !important;
- color: rgba(250, 250, 250, 0.6) !important;
+.reviews .swiper .swiper-button-prev:hover,
+.reviews .swiper .swiper-button-next:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(250, 250, 250, 0.6);
+    color: rgba(250, 250, 250, 0.6);
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
- display: none !important;
+.reviews .swiper .swiper-button-prev::after,
+.reviews .swiper .swiper-button-next::after {
+    display: none;
 }
 
-.left-svg,
-.right-svg {
+.reviews .swiper .left-svg,
+.reviews .swiper .right-svg {
  fill: none;
  stroke: #ffffff;
- width: 50% !important;
- height: 50% !important;
+ width: 50%;
+ height: 50%;
 }
 
 .swiper-button-next .right-svg {
@@ -110,7 +110,7 @@
 
  .swiper-button-prev,
  .swiper-button-next {
-     top: calc(100% - 50px) !important;
+     top: calc(100% - 50px);
  }
 }
 
@@ -126,6 +126,6 @@
 
  .swiper-button-prev,
  .swiper-button-next {
-     top: calc(100% - 50px) !important;
+     top: calc(100% - 50px);
  }
 }
