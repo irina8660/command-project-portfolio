@@ -1,12 +1,12 @@
 <section class="about-me" id="about-me">
   <div class="container about-me__container">
     <h2 class="about-me__title visually-hidden">About me</h2>
-    <din class="about-me__description-wrapper">
+    <div class="about-me__description-wrapper">
       <div class="about-me__description">
         <p class="about-me__description-text">
           I work with people all over the world to create impressive and
           <span class="accent-red-text">functional</span>
-          <span class="accen-gray-text">websites</span> that reflect each
+          <span class="accent-gray-text">websites</span> that reflect each
           client's unique personality.
         </p>
       </div>
@@ -30,14 +30,14 @@
           min-width="288"
         />
       </picture>
-    </din>
+    </div>
 
     <div class="about-me__content">
-      <ul class="about-me__list accordion-container">
-        <li class="about-me__item ac">
-          <div class="about-me__inner ac-trigger">
+      <ul class="about-me__list">
+        <li class="about-me__item">
+          <div class="about-me__inner">
             <h3 class="about-me__subtitle">About me</h3>
-            <button
+            <div
               class="about-me__button"
               aria-expanded="false"
               aria-label="Open about me"
@@ -50,10 +50,10 @@
               >
                 <use href="/icons.svg#icon-arrow-up"></use>
               </svg>
-            </button>
+            </div>
           </div>
-          <ul class="about-me__details ac-panel">
-            <li class="about-me__detail ac-text">
+          <ul class="about-me__details">
+            <li class="about-me__detail">
               <p class="about-me__text">
                 I am Lloyd Jefferson, a talented programmer with extensive
                 expertise in software development. I have an understanding of
@@ -64,7 +64,7 @@
                 even the most difficult tasks encountered on the way.
               </p>
             </li>
-            <li class="about-me__detail ac-text">
+            <li class="about-me__detail">
               <p class="about-me__text">
                 Able to work both independently and in a team. I can effectively
                 cooperate with colleagues, exchanging ideas and finding optimal
@@ -80,10 +80,10 @@
             </li>
           </ul>
         </li>
-        <li class="about-me__item ac">
-          <div class="about-me__inner ac-trigger">
+        <li class="about-me__item">
+          <div class="about-me__inner">
             <h3 class="about-me__subtitle">Role</h3>
-            <button
+            <div
               class="about-me__button"
               aria-expanded="false"
               aria-label="Role"
@@ -96,52 +96,47 @@
               >
                 <use href="/icons.svg#icon-arrow-up"></use>
               </svg>
-            </button>
+            </div>
           </div>
-          <ul class="about-me__details ac-panel">
-            <li class="about-me__detail ac-text">
+          <ul class="about-me__details">
+            <li class="about-me__detail">
               <p class="about-me__text">Frontend development</p>
             </li>
-            <li class="about-me__detail ac-text">
+            <li class="about-me__detail">
               <p class="about-me__text">HeadlessCMS, Wordpress</p>
             </li>
-            <li class="about-me__detail ac-text">
+            <li class="about-me__detail">
               <p class="about-me__text">Blender (enjoy)</p>
             </li>
           </ul>
         </li>
-        <li class="about-me__item ac">
-          <div class="about-me__inner ac-trigger">
+        <li class="about-me__item">
+          <div class="about-me__inner">
             <h3 class="about-me__subtitle">Education</h3>
-            <button
+            <div
               class="about-me__button"
               aria-expanded="false"
               aria-label="Education"
             >
-              <svg
-                class="about-me__icon"
-                width="18"
-                height="18"
-                aria-hidden="true"
-              >
-                <use href="/icons.svg#icon-arrow-up"></use>
+              <svg class="about-me__icon" width="5" height="10">
+                <use href="./images/icons.svg#icon-arrow-up" />
               </svg>
-            </button>
+            </div>
           </div>
-          <ul class="about-me__details ac-panel">
-            <li class="about-me__detail ac-text">
+          <ul class="about-me__details">
+            <li class="about-me__detail">
               <p class="about-me__text">
-                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
-                York
+                2018 - 2019 / Frontend Development Diploma,<br />
+                GoIT IT School, New York
               </p>
             </li>
-            <li class="about-me__detail ac-text">
+            <li class="about-me__detail">
               <p class="about-me__text">
-                2019 - 2020 / Advanced Web Development Certificate, GoIT IT
-                School, New York
+                2019 - 2020 / Advanced Web Development Certificate,<br />
+                GoIT IT School, New York
               </p>
             </li>
-            <li class="about-me__detail ac-text">
+            <li class="about-me__detail">
               <p class="about-me__text">
                 2020 - 2022 / Advanced Blender Animation Techniques, Udemy
               </p>
@@ -151,32 +146,23 @@
       </ul>
     </div>
 
-    <ul class="about-me__skills">
-      <li class="about-me__skill">
-        <p class="about-me__skill-text">HTML/CSS</p>
-      </li>
-      <li class="about-me__skill">
-        <p class="about-me__skill-text">JavaScript</p>
-      </li>
-      <li class="about-me__skill">
-        <p class="about-me__skill-text">React</p>
-      </li>
-      <li class="about-me__skill">
-        <p class="about-me__skill-text">Node.js</p>
-      </li>
-      <li class="about-me__skill">
-        <p class="about-me__skill-text">React Native</p>
-      </li>
-    </ul>
+    <!-- <div class="swiper about-me__skills-wrapper">
+      <div class="swiper-wrapper about-me__skills-list">
+        <div class="swiper-slide about-me__skill-item"><p>React</p></div>
+        <div class="swiper-slide about-me__skill-item"><p>JavaScript</p></div>
+        <div class="swiper-slide about-me__skill-item"><p>Node.js</p></div>
+        <div class="swiper-slide about-me__skill-item"><p>HTML/CSS</p></div>
+        <div class="swiper-slide about-me__skill-item"><p>React Native</p></div>
+      </div>
 
-    <button
-      class="about-me__skills-button"
-      aria-expanded="false"
-      aria-label="Education"
-    >
-      <svg class="about-me__icon" width="28" height="28" aria-hidden="true">
-        <use href="/icons.svg#icon-arrow-narrow-right"></use>
-      </svg>
-    </button>
+      <div
+        class="about-me__skills-button about-me__skills-button-next"
+        aria-label="Next slide"
+      >
+        <svg class="about-me__skills-arrow" width="28" height="28">
+          <use href="/icons.svg#icon-arrow-left"></use>
+        </svg>
+      </div>
+    </div> -->
   </div>
 </section>
