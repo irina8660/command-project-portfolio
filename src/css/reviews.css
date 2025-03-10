@@ -1,0 +1,123 @@
+.reviews-block {
+ margin: 0;
+ padding: 32px 0 84px 0;
+}
+
+.reviews-img {
+ max-width: 48px;
+ border-radius: 10px;
+ margin: 0;
+ padding: 0;
+}
+
+.reviews-elem {
+ border: 1px solid rgba(250, 250, 250, 0.2);
+ border-radius: 20px;
+ padding: 32px 24px;
+ min-height: 352px;
+}
+
+.not-found {
+ padding: 32px 24px;
+ min-height: 352px;
+ display: flex;
+ align-items: center;
+ margin: 0 auto;
+}
+
+.reviews-info {
+ margin-top: 32px;
+}
+
+.reviews-autor {
+ margin-bottom: 8px;
+ font-weight: 600;
+ font-size: 20px;
+ line-height: 150%;
+ letter-spacing: -0.02em;
+ color: #fafafa;
+}
+
+.reviews-text {
+ margin: 0;
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 150%;
+ letter-spacing: -0.02em;
+ color: rgba(250, 250, 250, 0.6);
+}
+
+.reviews .swiper .swiper-button-prev,
+.reviews .swiper .swiper-button-next {
+    width: 68px;
+    height: 68px;
+    border: 1px solid #fafafa;
+    border-radius: 50%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    top: calc(100% - 50px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reviews .swiper .swiper-button-prev {
+    margin-left: -45px;
+}
+
+.reviews .swiper .swiper-button-next {
+    margin-left: 45px;
+}
+
+.reviews .swiper .swiper-button-prev:hover,
+.reviews .swiper .swiper-button-next:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(250, 250, 250, 0.6);
+    color: rgba(250, 250, 250, 0.6);
+}
+
+.reviews .swiper .swiper-button-prev::after,
+.reviews .swiper .swiper-button-next::after {
+    display: none;
+}
+
+.reviews .swiper .left-svg,
+.reviews .swiper .right-svg {
+ fill: none;
+ stroke: #ffffff;
+ width: 50%;
+ height: 50%;
+}
+
+.swiper-button-next .right-svg {
+ transform: scaleX(-1);
+}
+
+@media (min-width: 768px) {
+ .reviews-block {
+     padding: 32px 0 100px 0;
+ }
+
+ .reviews-elem {
+     min-height: 356px;
+ }
+
+ .swiper-button-prev,
+ .swiper-button-next {
+     top: calc(100% - 50px);
+ }
+}
+
+@media (min-width: 1280px) {
+ .reviews-block {
+     max-width: 1376px;
+ }
+
+ .reviews-elem {
+     min-height: 356px;
+ }
+
+ .swiper-button-prev,
+ .swiper-button-next {
+     top: calc(100% - 50px);
+ }
+}
