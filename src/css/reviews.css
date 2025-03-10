@@ -1,8 +1,4 @@
 .reviews-block {
- max-width: 343px;
- min-width: 343px;
- display: grid;
- grid-template-columns: repeat(auto-fit, 343px);
  margin: 0;
  padding: 32px 0 84px 0;
 }
@@ -98,9 +94,6 @@
 
 @media (min-width: 768px) {
  .reviews-block {
-     max-width: 704px;
-     min-width: 343px;
-     grid-template-columns: repeat(auto-fit, 344px);
      padding: 32px 0 100px 0;
  }
 
@@ -117,7 +110,6 @@
 @media (min-width: 1280px) {
  .reviews-block {
      max-width: 1376px;
-     grid-template-columns: repeat(auto-fit, 332px);
  }
 
  .reviews-elem {
