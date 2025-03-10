@@ -1,0 +1,130 @@
+.hero-cntr {
+  background-image: url(../images/Hero-bgnd-mobile.png);
+  width: 100%;
+  max-width: 375px;
+  height: 812px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--button-text);
+  text-align: start;
+}
+
+.hero-soc-networks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 4px;
+  max-width: 375px;
+  height: 37px;
+  list-style: none;
+  position: absolute;
+  bottom: 32px;
+}
+
+.hero-soc-network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 37px;
+  height: 37px;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  letter-spacing: -0.02em;
+  color: var(--button-text);
+  text-decoration: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.hero-soc-network:hover,
+.hero-soc-network:focus,
+.hero-soc-email:hover,
+.hero-soc-email:focus {
+  border-color: var(--button-text);
+}
+
+.hero-soc-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: var(--button-text);
+  text-decoration: none;
+  padding: 4px 12px;
+  transition: var(--transition);
+}
+
+/* ---------Adaptation--------- */
+/* --------Laptop-------- */
+@media (min-width: 768px) {
+  .hero-cntr {
+    background-image: url(../images/Hero-bgnd-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 768px;
+    height: 1024px;
+    min-height: fit-content;
+  }
+
+  .hero-title {
+    font-size: 90px;
+  }
+
+  .hero-soc-networks {
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 8px;
+    max-width: 473px;
+    height: 55px;
+    right: 32px;
+  }
+
+  .hero-soc-network {
+    font-size: 16px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .hero-soc-email {
+    font-size: 16px;
+    width: 223px;
+    height: 55px;
+  }
+}
+/* --------Desktop------- */
+@media (min-width: 1440px) {
+  .hero-cntr {
+    background-image: url(../images/Hero-bgnd.png);
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    height: 900px;
+  }
+
+.hero-soc-networks {
+    right: 0;
+  }
+}
