@@ -7,7 +7,7 @@ import "izitoast/dist/css/iziToast.min.css";
 document.addEventListener("DOMContentLoaded", async function () {
     const reviewsSection = document.querySelector(".reviews");
     const reviewsBlock = document.querySelector(".reviews-block");
-п    try {
+    try {
         const response = await fetch("https://portfolio-js.b.goit.study/api/reviews");
         const reviewsData = await response.json();
         let reviewsHTML = reviewsData
