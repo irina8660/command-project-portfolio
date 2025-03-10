@@ -124,17 +124,7 @@
     height: 900px;
   }
 
-.hero-section {
-  background-image: linear-gradient(
-        to right,
-        rgba(237, 59, 68),
-        var(--background),
-        var(--background),
-        );
-  width: 100%;
-}
-
-  .hero-soc-networks {
+.hero-soc-networks {
     right: 0;
   }
 }
