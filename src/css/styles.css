@@ -7,6 +7,7 @@
 
 /* Sections style */
 @import url('./header.css');
+@import url('./menu.css');
 @import url('./hero.css');
 @import url('./about-me.css');
 @import url('./benefits.css');
@@ -15,4 +16,4 @@
 @import url('./covers.css');
 @import url('./reviews.css');
 @import url('./work-together.css');
-@import url('./menu.css');
+@import url('./modal.css');
