@@ -7,27 +7,18 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
+  position: absolute;
   min-height: 100vh;
 }
 
-.hero-title-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 343px;
-}
-
 .hero-title {
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 50px;
   line-height: 1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #fafafa;
-  text-align: left;
+  color: var(--button-text);
+  text-align: start;
 }
 
 .hero-soc-networks {
@@ -51,23 +42,23 @@
   gap: 10px;
   width: 37px;
   height: 37px;
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 14px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   letter-spacing: -0.02em;
-  color: #fafafa;
+  color: var(--button-text);
   text-decoration: none;
   flex-wrap: wrap;
   justify-content: center;
+  transition: var(--transition);
 }
 
 .hero-soc-network:hover,
 .hero-soc-network:focus,
 .hero-soc-email:hover,
 .hero-soc-email:focus {
-  border: 1px solid #fafafa;
+  border-color: var(--button-text);
 }
 
 .hero-soc-email {
@@ -76,15 +67,15 @@
   justify-content: center;
   flex-direction: row;
   gap: 10px;
-  font-family: 'Inter Tight', sans-serif;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
-  color: #fafafa;
+  color: var(--button-text);
   text-decoration: none;
   padding: 4px 12px;
+  transition: var(--transition);
 }
 
 /* ---------Adaptation--------- */
@@ -97,10 +88,6 @@
     max-width: 768px;
     height: 1024px;
     min-height: fit-content;
-  }
-
-  .hero-title-wrapper {
-    max-width: 632px;
   }
 
   .hero-title {
@@ -131,19 +118,13 @@
 /* --------Desktop------- */
 @media (min-width: 1440px) {
   .hero-cntr {
-    background-color: #1c1d20;
-  background-image: url(../images/Hero-bgnd.png);
-  background-repeat: no-repeat;
-  max-width: 1440px;
-  height: 900px;
+    background-image: url(../images/Hero-bgnd.png);
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    height: 900px;
   }
 
-  .hero-title-wrapper {
-    width: 80%; 
-    max-width: 1200px;
-  }
-
- .hero-soc-networks {
-  right: 0;
+.hero-soc-networks {
+    right: 0;
   }
 }
