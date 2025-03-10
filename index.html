@@ -15,10 +15,94 @@
     <script type="module" crossorigin src="/command-project-portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/command-project-portfolio/assets/vendor-CVvar43t.js">
     <link rel="stylesheet" crossorigin href="/command-project-portfolio/assets/vendor-caWExNWE.css">
-    <link rel="stylesheet" crossorigin href="/command-project-portfolio/assets/index-Bc11iD6_.css">
+    <link rel="stylesheet" crossorigin href="/command-project-portfolio/assets/index-ZDIKX5AS.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header header__container container">
+    <a class="header__logo" href="./index.html" aria-label="Go to homepage">
+      <img
+        class="header__logo-image"
+        srcset="/command-project-portfolio/assets/logo-photo-1x-C5oUbibY.png 1x, /command-project-portfolio/assets/logo-photo-2x-7f3AKADV.png 2x"
+        alt="Logog Jefferson"
+        width="80"
+        height="80"
+      />
+      <p class="header__logo-text">jefferson*</p>
+    </a>
+
+    <nav class="header__nav header__nav--hidden">
+      <button
+        class="header__menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="header__nav-list"
+      >
+        Menu
+      </button>
+      <ul id="header__nav-list" class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#about-me">About me</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="header__order-button" href="#work-together">Order the project</a>
+
+    <!-- Mobile Menu -->
+
+    <button
+      class="header__mobile-menu-button"
+      type="button"
+      aria-label="Open mobile menu"
+      data-menu-open
+    >
+      <div class="brg-wrapper">
+        <sprite class="brg"></sprite>
+        <sprite class="brg"></sprite>
+      </div>
+    </button>
+
+    <div class="header__mobile-menu-container">
+      <button
+        class="header__mobile-menu-close-button"
+        aria-label="Close mobile menu"
+      >
+        <svg class="header__mobile-menu-close-icon" width="32" height="32">
+          <use href="/img/sprite.svg#x"></use>
+        </svg>
+      </button>
+
+      <nav class="header__mobile-nav">
+        <ul class="header__mobile-nav-list">
+          <li class="header__mobile-nav-item">
+            <a class="header__mobile-nav-link" href="#about-me">About me</a>
+          </li>
+          <li class="header__mobile-nav-item">
+            <a class="header__mobile-nav-link" href="#benefits">Benefits</a>
+          </li>
+          <li class="header__mobile-nav-item">
+            <a class="header__mobile-nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="header__mobile-nav-item">
+            <a class="header__mobile-nav-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header__mobile-order-button" href="#work-together">
+        Order the project
+      </a>
+    </div>
+
   <div class="container">
     <a class="header__logo" href="#">
       <img
@@ -44,7 +128,6 @@
     <button class="header__burger" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
-  </div>
 </header>
 
 
@@ -64,8 +147,187 @@
   </div>
 </section>
  
-      <section class="" id="">
-  <div class="container"></div>
+      <section class="about-me" id="about-me">
+  <div class="container about-me__container">
+    <h2 class="about-me__title visually-hidden">About me</h2>
+    <din class="about-me__description-wrapper">
+      <div class="about-me__description">
+        <p class="about-me__description-text">
+          I work with people all over the world to create impressive and
+          <span class="accent-red-text">functional</span>
+          <span class="accen-gray-text">websites</span> that reflect each
+          client's unique personality.
+        </p>
+      </div>
+      <picture class="about-me__picture">
+        <source
+          srcset="/command-project-portfolio/img/me_desk@1x.webp 1x, /command-project-portfolio/img/me_desk@2x.webp 2x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="/command-project-portfolio/img/me_tab@1x.webp 1x, /command-project-portfolio/img/me_tab@2x.webp 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/command-project-portfolio/img/me_mob@1x.webp 1x, /command-project-portfolio/img/me_mob@2x.webp 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="about-me__image"
+          src="/command-project-portfolio/img/me_mob@1x.webp"
+          alt="Portrait of [Lloyd]"
+          min-width="288"
+        />
+      </picture>
+    </din>
+
+    <div class="about-me__content">
+      <ul class="about-me__list accordion-container">
+        <li class="about-me__item ac">
+          <div class="about-me__inner ac-trigger">
+            <h3 class="about-me__subtitle">About me</h3>
+            <button
+              class="about-me__button"
+              aria-expanded="false"
+              aria-label="Open about me"
+            >
+              <svg
+                class="about-me__icon"
+                width="18"
+                height="18"
+                aria-hidden="true"
+              >
+                <use href="/command-project-portfolio/icons.svg#icon-arrow-up"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="about-me__details ac-panel">
+            <li class="about-me__detail ac-text">
+              <p class="about-me__text">
+                I am Lloyd Jefferson, a talented programmer with extensive
+                expertise in software development. I have an understanding of
+                different programming languages and technologies, always ready
+                to improve my skills. I always follow the latest trends and look
+                for unconventional, creative solutions to problems. I have a
+                high level of analytical skills and am able to effectively solve
+                even the most difficult tasks encountered on the way.
+              </p>
+            </li>
+            <li class="about-me__detail ac-text">
+              <p class="about-me__text">
+                Able to work both independently and in a team. I can effectively
+                cooperate with colleagues, exchanging ideas and finding optimal
+                solutions. Professional maturity allows you to calmly cope with
+                challenges and stressful situations, while maintaining a high
+                quality of work. I am always looking for opportunities for
+                self-improvement. I actively study new technologies and
+                practices to stay abreast of the latest innovations. I have a
+                strong understanding of various programming languages,
+                frameworks and architectural concepts that allow me to create
+                efficient and scalable software.
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li class="about-me__item ac">
+          <div class="about-me__inner ac-trigger">
+            <h3 class="about-me__subtitle">Role</h3>
+            <button
+              class="about-me__button"
+              aria-expanded="false"
+              aria-label="Role"
+            >
+              <svg
+                class="about-me__icon"
+                width="18"
+                height="18"
+                aria-hidden="true"
+              >
+                <use href="/command-project-portfolio/icons.svg#icon-arrow-up"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="about-me__details ac-panel">
+            <li class="about-me__detail ac-text">
+              <p class="about-me__text">Frontend development</p>
+            </li>
+            <li class="about-me__detail ac-text">
+              <p class="about-me__text">HeadlessCMS, Wordpress</p>
+            </li>
+            <li class="about-me__detail ac-text">
+              <p class="about-me__text">Blender (enjoy)</p>
+            </li>
+          </ul>
+        </li>
+        <li class="about-me__item ac">
+          <div class="about-me__inner ac-trigger">
+            <h3 class="about-me__subtitle">Education</h3>
+            <button
+              class="about-me__button"
+              aria-expanded="false"
+              aria-label="Education"
+            >
+              <svg
+                class="about-me__icon"
+                width="18"
+                height="18"
+                aria-hidden="true"
+              >
+                <use href="/command-project-portfolio/icons.svg#icon-arrow-up"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="about-me__details ac-panel">
+            <li class="about-me__detail ac-text">
+              <p class="about-me__text">
+                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+                York
+              </p>
+            </li>
+            <li class="about-me__detail ac-text">
+              <p class="about-me__text">
+                2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+                School, New York
+              </p>
+            </li>
+            <li class="about-me__detail ac-text">
+              <p class="about-me__text">
+                2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+              </p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="about-me__skills">
+      <li class="about-me__skill">
+        <p class="about-me__skill-text">HTML/CSS</p>
+      </li>
+      <li class="about-me__skill">
+        <p class="about-me__skill-text">JavaScript</p>
+      </li>
+      <li class="about-me__skill">
+        <p class="about-me__skill-text">React</p>
+      </li>
+      <li class="about-me__skill">
+        <p class="about-me__skill-text">Node.js</p>
+      </li>
+      <li class="about-me__skill">
+        <p class="about-me__skill-text">React Native</p>
+      </li>
+    </ul>
+
+    <button
+      class="about-me__skills-button"
+      aria-expanded="false"
+      aria-label="Education"
+    >
+      <svg class="about-me__icon" width="28" height="28" aria-hidden="true">
+        <use href="/command-project-portfolio/icons.svg#icon-arrow-narrow-right"></use>
+      </svg>
+    </button>
+  </div>
 </section>
 
       <section class="benefits" id="benefits">
