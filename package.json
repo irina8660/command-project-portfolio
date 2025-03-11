@@ -19,6 +19,7 @@
   "dependencies": {
     "accordion": "^3.0.2",
     "accordion-js": "^3.4.0",
+    "acordeon": "^1.2.0",
     "axios": "^1.8.2",
     "izitoast": "^1.4.0",
     "swiper": "^11.2.5",
