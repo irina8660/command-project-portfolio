@@ -1,0 +1,126 @@
+/* Общие стили */
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+  position: fixed;
+  padding-top: 16px;
+  background-color: rgba(28, 29, 32, 0.8); /* Полупрозрачный фон */
+  backdrop-filter: blur(10px);
+}
+
+.header__container {
+  max-width: 1376px;
+  padding: 32px 32px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 24px; /* Расстояние между логотипом и меню */
+}
+
+/* Логотип */
+.header__logo {
+  display: flex;
+  align-items: start;
+  gap: 10px; /* Расстояние между картинкой и текстом */
+}
+
+.header__logo-image {
+  border-radius: 18px;
+  width: 80px;
+  height: 80px;
+}
+
+.header__logo-text {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  white-space: nowrap; /* Предотвращает перенос текста */
+}
+
+.header__menu-button {
+  margin-left: auto;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  width: 60px;
+  height: 39px;
+  text-decoration: underline;
+  &:hover {
+    color: #ed3b44;
+    background-color: transparent !important;
+  }
+}
+
+.header__nav-list.active {
+  display: flex;
+}
+
+/* Навигация */
+.header__nav {
+  display: none; /* Скрываем на мобильных */
+}
+
+.header__nav-list {
+  display: none;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header__nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.header__nav-link:hover {
+  color: #ed3b44;
+}
+
+/* Кнопка заказа */
+.header__order-button {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  padding: 18px 24px;
+  background-color: var(--button);
+  color: var(--button-text);
+  transition: background-color var(--transition);
+  @media (min-width: 768px) {
+    & {
+      display: flex;
+    }
+  }
+}
+
+.header__mobile-menu-icon {
+  stroke: #fafafa;
+  width: 28px;
+  height: 28px;
+}
+
+.burger-btn {
+  background-color: transparent !important;
+  @media (min-width: 768px) {
+    & {
+      display: none;
+    }
+  }
+}

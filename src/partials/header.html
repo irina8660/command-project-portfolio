@@ -1,28 +1,53 @@
 <header class="header">
-  <div class="container">
-    <a class="header__logo" href="#">
+  <div class="header__container container">
+    <a class="header__logo" href="./index.html" aria-label="Go to homepage">
       <img
-        class="header__logo-img"
-        srcset="/src/images/img/logo1x.png 1x, /src/images/img/logo2x.png 2x"
-        alt="Logo"
+        class="header__logo-image"
+        srcset="
+          ./images/img/logo-photo-1x.png 1x,
+          ./images/img/logo-photo-2x.png 2x
+        "
+        alt="Logo Jefferson"
         width="80"
         height="80"
       />
-      <span class="header__logo-text">jefferson*</span>
+      <p class="header__logo-text">jefferson*</p>
     </a>
-
-    <nav class="header__nav">
-      <ul class="header__menu">
-        <li><a class="header__menu-link" href="#about">About me</a></li>
-        <li><a class="header__menu-link" href="#benefits">Benefits</a></li>
-        <li><a class="header__menu-link" href="#projects">Projects</a></li>
-        <li><a class="header__menu-link" href="#faq">FAQ</a></li>
+    <nav class="header__nav header__nav--hidden">
+      <button
+        class="header__menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="header__nav-list"
+      >
+        Menu
+      </button>
+      <ul id="header__nav-list" class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#about-me">About me</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#faq">FAQ</a>
+        </li>
       </ul>
-      <a class="header__order" href="#work">Order the project</a>
     </nav>
+    <a class="header__order-button" href="#work-together">Order the project</a>
 
-    <button class="header__burger" aria-label="Open menu">
-      <span></span><span></span><span></span>
+    <button
+      class="burger-btn"
+      type="button"
+      aria-label="Open mobile menu"
+      data-menu-open
+    >
+      <svg class="header__mobile-menu-icon">
+        <use href="./images/img/icons.svg#menu"></use>
+      </svg>
     </button>
   </div>
 </header>
