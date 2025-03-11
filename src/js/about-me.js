@@ -29,87 +29,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-const swiper = new Swiper('.about-me__skills-wrapper', {
-  modules: [Navigation, Keyboard],
-  simulateTouch: true,
-  touchRatio: 1,
-  touchEventsTarget: 'container',
-  grabCursor: true,
+const swiper = new Swiper('.swiper', {
+  modules: [Navigation],
+  loop: true,
   slidesPerView: 2,
   spaceBetween: 0,
   navigation: {
     nextEl: '.about-me__skills-button-next',
-    prevEl: '.about-me__skills-button-prev',
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
   },
   breakpoints: {
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 0,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    1440: {
-      slidesPerView: 4,
-      spaceBetween: 40,
+    320: { slidesPerView: 2 },
+    768: { slidesPerView: 3 },
+    1440: { slidesPerView: 6 },
+  },
+  on: {
+    slideChange: function () {
+      highlightActiveSkill(this);
     },
   },
+
+  touchEventsTarget: 'wrapper',
+  touchRatio: 1,
+  touchAngle: 45,
+  simulateTouch: true,
+  grabCursor: true,
 });
-
-// import { Navigation, Keyboard } from 'swiper/modules';
-
-// const refs = {
-//   prevButton: document.querySelector(
-//     '.about-me__skills-button.swiper-button-prev'
-//   ),
-//   nextButton: document.querySelector(
-//     '.about-me__skills-button.swiper-button-next'
-//   ),
-//   buttonWrapper: document.querySelector('.about-me__button-wraper'),
-// };
-
-// if (refs.buttonWrapper) {
-//   refs.buttonWrapper.addEventListener('mousedown', e => {
-//     if (e.target === e.currentTarget) return;
-//     setTimeout(() => e.target.closest('button')?.blur(), 0);
-//   });
-// }
-
-// const swiper = new Swiper('.swiper', {
-//   modules: [Navigation, Keyboard],
-//   speed: 250,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   spaceBetween: 0,
-//   breakpoints: {
-//     768: { slidesPerView: 2 },
-//     1440: { slidesPerView: 4 },
-//   },
-//   keyboard: {
-//     enabled: true,
-//     onlyInViewport: true,
-//   },
-//   on: {
-//     slideChange: () => checkNavigationButtons(swiper),
-//   },
-// });
-
-// function checkNavigationButtons(swiper) {
-//   if (swiper.isBeginning) {
-//     refs.prevButton.setAttribute('disabled', 'true');
-//   } else {
-//     refs.prevButton.removeAttribute('disabled');
-//   }
-//   if (swiper.isEnd) {
-//     refs.nextButton.setAttribute('disabled', 'true');
-//   } else {
-//     refs.nextButton.removeAttribute('disabled');
-//   }
-// }
