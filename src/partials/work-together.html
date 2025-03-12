@@ -2,7 +2,7 @@
   <div class="container form-section-container">
     <div class="portrait-title-together-container">
       <div class="portrait-title-container">
-        <picture class="work-together-picture">
+        <picture>
           <source
             srcset="
               ./images/img/footer-desk1.jpeg-min.jpg 1x,
@@ -13,7 +13,7 @@
           <source
             srcset="
               ./images/img/footer-tab1.jpeg-min.jpg 1x,
-              ./images/img/footer-tab2.jpeg-min.jpg 1x
+              ./images/img/footer-tab2.jpeg-min.jpg 2x
             "
             media="(min-width: 768px)"
           />
@@ -22,8 +22,9 @@
               ./images/img/footer-mob1.jpeg-min.jpg 1x,
               ./images/img/footer-mob2.jpeg-min.jpg 2x
             "
-            media="(min-width: 320px)"
+            media="(max-width: 767px)"
           />
+
           <img
             src="./images/img/"
             alt="Let’s work together"
@@ -62,6 +63,7 @@
           />
         </div>
       </div>
+
       <button class="form-btn" type="submit" aria-label="Send form">
         Send
       </button>
