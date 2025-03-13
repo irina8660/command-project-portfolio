@@ -1,10 +1,10 @@
-import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
-
 const refs = {
   coversItems: document.querySelectorAll('.covers-item'),
   coversContent: document.querySelector('.covers-content'),
+  audioElement: document.getElementById('audio'),
 };
+
+refs.audioElement.volume = 0.1;
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
