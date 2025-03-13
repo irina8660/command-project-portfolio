@@ -1,12 +1,16 @@
 /* -------------COMMON STYLES-------------- */
 
+#audio {
+  position: absolute;
+  z-index: 999;
+}
+
 .covers-content {
   overflow: hidden;
   position: relative;
 }
 
 .covers-wrapper {
-  backdrop-filter: blur(15px);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
